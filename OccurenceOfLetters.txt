@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OccurenceOfletters
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int count1, count2,count3;
+            string str1, str2,str3;
+            Console.WriteLine("Enter a string :");
+            str1= Console.ReadLine();
+            str2=str1.ToLower();
+            count1 = str1.Length;
+            str3 = str2.Replace("a","");
+            count2 = str3.Length;
+            count3=count1-count2;
+            Console.WriteLine("The occurence of a in string are {0}",count3+" ");
+        }
+    }
+}
